@@ -1,0 +1,115 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .chatbot-container {
+    max-width: 80%;
+    min-height: 20%;
+    margin: 0 auto; /* This centers the chatbot window horizontally */
+    margin-top: 10%; /* Adjust this value to add vertical space if needed */
+    border: 1px solid #ffa500; /* Orange border */
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+  }
+  
+  .chat-header {
+    background-color: #ff7f00; /* Orange background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ffa500; /* Orange border */
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .chat-log {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .message {
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+  }
+  
+  .message-text {
+    padding: 18px;
+    border-radius: 20px;
+    min-width: 15%;
+    max-width: 70%;
+    word-wrap: break-word;
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    position: relative; /* Position relative for absolute positioning */
+  }
+  
+  .message-timestamp {
+    font-size: 0.8em;
+    color: #8c8c8c; /* Adjust color as needed */
+    position: absolute;
+    bottom: 2px; /* Adjust vertical position */
+    right: 20px; /* Adjust horizontal position */
+  }
+
+  .User .message-text {
+    background-color: #ffb366; /* Light orange background */
+    color: #333;
+    float: right;
+  }
+  
+  .Chatbot .message-text {
+    background-color: #ff7f00; /* Orange background */
+    color: white;
+    float: left;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #ffa500; /* Orange border */
+  }
+  
+  .input-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ffa500; /* Orange border */
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .input-container button {
+    background-color: #ff7f00; /* Orange background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-container button:hover {
+    background-color: #ff9933; /* Lighter orange on hover */
+  }
+  

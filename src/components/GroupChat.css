@@ -1,0 +1,111 @@
+.group-chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* Full viewport height */
+  }
+  
+  .chat-window {
+    width: 100%;
+    height: 100%;
+    background-color: #d6b58d; /* Brown-orange background color */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .messagez {
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .other-message {
+    background-color: #f4e3cc; /* Light brown-orange for other users' messages */
+    border-radius: 10px;
+  }
+  
+  .own-message {
+    background-color: #e8ccb2; /* Lighter brown-orange for own messages */
+    border-radius: 10px;
+  }
+  
+  .message-time {
+    font-size: 0.8em;
+    color: #888;
+  }
+  
+  .input-form {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #d6b58d; /* Brown-orange background color */
+  }
+  
+  .input-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #send {
+    background-color: #5a4633; /* Dark brown */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .file-upload-label {
+    background-color: #5a4633; /* Dark brown */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .file-upload-label span {
+    display: inline-block;
+  }
+  
+  .file-upload-label input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .file-upload-label:hover {
+    background-color: #423225; /* Darker brown on hover */
+  }
+  
+  .attached-media {
+    color: #888;
+    margin-left: 10px;
+    font-size: 0.9em;
+  }
+  

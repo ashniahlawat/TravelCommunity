@@ -1,0 +1,120 @@
+.friends-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .friends-content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the video */
+    /* max-width: 800px;
+    margin: 0 auto; */
+    padding: 20px;
+  }
+  
+  /* Other CSS styles for friend cards and buttons... */
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .friends-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust spacing between cards */
+  }
+  
+  .friend-card {
+    
+    width: calc(33.33% - 20px); /* Adjust card width for spacing */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #f87400;
+    border-radius: 15px; /* Make the cards more bubbly */
+    background-color: transparent;
+    color: "#FFA500";
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a slight shadow effect */
+  }
+  
+  .friend-info {
+    text-align: center;
+    margin-bottom: 10px;
+    color: "#FFA500";
+    position: relative;
+  }
+  
+/* Inside the FriendsComponent.css file */
+.avatar-wrapper {
+    width: 120px; /* Adjust as needed */
+    height: 120px; /* Adjust as needed */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflow */
+    margin: 0 auto; /* Center the avatar */
+    position: relative; /* Positioning context for the avatar */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .avatar-wrapper::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute; /* Position absolutely within the wrapper */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+  }
+  
+  .avatar {
+    width: 100%; /* Fill the wrapper */
+    height: 100%; /* Fill the wrapper */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    display: block; /* Make it a block element */
+    position: relative; /* Ensure it respects z-index */
+    z-index: 1; /* Place it above the white circle */
+  }
+  
+  
+  
+  
+  
+  .button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8400;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .button:hover {
+    background-color: #b35c00; /* Darker color on hover */
+  }
+  
+  .tag {
+    background-color: #28a745;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
